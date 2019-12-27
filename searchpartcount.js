@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Part count for lego search
+// @name         Part count for search
 // @namespace    https://ceyxstudios.com/
 // @version      0.1
-// @description  Lego search with bricklink part count for sets
+// @description  Search with bricklink part count for sets
 // @author       Kai Zimmermann
 // @include      /^(https?:\/\/)?(www\.)?lego\.com/
 // @grant        GM_xmlhttpRequest
