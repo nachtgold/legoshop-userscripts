@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Part count for lego products
+// @name         Part count for products
 // @namespace    https://ceyxstudios.com/
 // @version      0.3
-// @description  Lego product page with bricklink part count
+// @description  Product page with bricklink part count
 // @author       Kai Zimmermann
 // @include      /^(https?:\/\/)?(www\.)?lego\.com(\/.+)?\/product(.+)$/
 // @grant        GM_xmlhttpRequest
