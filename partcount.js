@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Part count for lego
 // @namespace    https://ceyxstudios.com/
-// @version      0.1
-// @description  Lego shop with bricklist part count
+// @version      0.2
+// @description  Lego shop with bricklink part count
 // @author       Kai Zimmermann
 // @include      /^(https?:\/\/)?(www\.)?lego\.com(\/.+)?\/product(.+)$/
 // @grant        GM_xmlhttpRequest
@@ -27,7 +27,11 @@
                 if(parts.length == 2) {
                     var pieces = document.querySelector('[data-test="product-details__piece-count"]');
                     if(!!pieces) {
-                        pieces.textContent += " (" + parts[1] + ")";
+                        var link = document.createElement('a');
+                        link.href = brick_url;
+                        link.target = '_blank';
+                        link.textContent = ' (' + parts[1] + ')';
+                        pieces.appendChild(link);
                     }
                 }
             }
